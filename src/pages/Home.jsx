@@ -1,4 +1,7 @@
 import React from "react";
+import { GrCertificate } from "react-icons/gr";
+import { PiUserListThin } from "react-icons/pi";
+
 import Header from "../Components/Header";
 import image from "../assets/backgroundHome.jpg";
 import Card from "../Components/Card";
@@ -15,8 +18,32 @@ export default function Home() {
                     height: "100vh",
                 }}
             >
-                <Card title="Get Graduation Certificate" />
-                <Card title="Get the Result" />
+                <div className="grid grid-cols-4 gap-2">
+                    <Card title="Get Student Results">
+                        <GrCertificate className="text-5xl m-auto" />
+                    </Card>
+                    <Card title="Get Students Lists">
+                        <PiUserListThin className="text-5xl m-auto" />
+                    </Card>
+                    <Card title="Get Student Results">
+                        <GrCertificate className="text-5xl m-auto" />
+                    </Card>
+                    <Card title="Get Students Lists">
+                        <PiUserListThin className="text-5xl m-auto" />
+                    </Card>
+                    <Card title="Get Student Results">
+                        <GrCertificate className="text-5xl m-auto" />
+                    </Card>
+                    <Card title="Get Students Lists">
+                        <PiUserListThin className="text-5xl m-auto" />
+                    </Card>
+                    <Card title="Get Student Results">
+                        <GrCertificate className="text-5xl m-auto" />
+                    </Card>
+                    <Card title="Get Students Lists">
+                        <PiUserListThin className="text-5xl m-auto" />
+                    </Card>
+                </div>
             </div>
         </>
     );
