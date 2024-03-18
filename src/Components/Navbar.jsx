@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <>
             <nav className="flex p-5 gap-10 justify-center bg-blue-50">
-                <CgProfile className="text-3xl text-center text-blue-500 mr-auto" />
+                <CgProfile className="text-3xl text-center text-blue-500 mr-auto " />
 
                 <Link to="/" className="ml-auto">
                     {" "}
