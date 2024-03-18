@@ -1,47 +1,48 @@
 import React from "react";
 import { GrCertificate } from "react-icons/gr";
+import { BsJournalCheck } from "react-icons/bs";
 import { PiUserListThin } from "react-icons/pi";
+import { CgTranscript } from "react-icons/cg";
 
 import Header from "../Components/Header";
-import image from "../assets/backgroundHome.jpg";
 import Card from "../Components/Card";
 export default function Home() {
     return (
         <>
             <Header />
-            <div
-                style={{
-                    backgroundImage: `url(${image})`,
-                    backgroundSize: "cover",
-                    opacity: "0.8",
-                    width: "100%",
-                    height: "100vh",
-                }}
-            >
-                <div className="grid grid-cols-4 gap-2">
-                    <Card title="Get Student Results">
-                        <GrCertificate className="text-5xl m-auto" />
+            <div>
+                <div className="grid grid-cols-4">
+                    <Card
+                        title="Students Lists"
+                        description={
+                            "Get the list of students enrolled in a specific academic year."
+                        }
+                        dir={"/Lists"}
+                    >
+                        <PiUserListThin className="text-5xl m-auto text-blue-500" />
                     </Card>
-                    <Card title="Get Students Lists">
-                        <PiUserListThin className="text-5xl m-auto" />
+                    <Card
+                        title="Students Desires"
+                        description={"The students registered desires"}
+                    >
+                        <BsJournalCheck className="text-4xl m-auto text-blue-500" />
                     </Card>
-                    <Card title="Get Student Results">
-                        <GrCertificate className="text-5xl m-auto" />
+                    <Card
+                        title="Student Certificate"
+                        description={
+                            "Extract a certificate using the student national ID"
+                        }
+                        dir={"/Certificates"}
+                    >
+                        <GrCertificate className="text-4xl m-auto text-blue-500" />
                     </Card>
-                    <Card title="Get Students Lists">
-                        <PiUserListThin className="text-5xl m-auto" />
-                    </Card>
-                    <Card title="Get Student Results">
-                        <GrCertificate className="text-5xl m-auto" />
-                    </Card>
-                    <Card title="Get Students Lists">
-                        <PiUserListThin className="text-5xl m-auto" />
-                    </Card>
-                    <Card title="Get Student Results">
-                        <GrCertificate className="text-5xl m-auto" />
-                    </Card>
-                    <Card title="Get Students Lists">
-                        <PiUserListThin className="text-5xl m-auto" />
+                    <Card
+                        title="Degree Statement"
+                        description={
+                            "akldfjal alskdjfakljd adslkjfa vzcl twrtwkljm jfsldg"
+                        }
+                    >
+                        <CgTranscript className="text-4xl m-auto text-blue-500" />
                     </Card>
                 </div>
             </div>
