@@ -21,12 +21,12 @@ export default function Home() {
                     >
                         <PiUserListThin className="text-5xl m-auto text-blue-500" />
                     </Card>
-                    <Card
+                    {/* <Card
                         title="Students Desires"
                         description={"The students registered desires"}
                     >
                         <BsJournalCheck className="text-4xl m-auto text-blue-500" />
-                    </Card>
+                    </Card> */}
                     <Card
                         title="Student Certificate"
                         description={
@@ -36,14 +36,14 @@ export default function Home() {
                     >
                         <GrCertificate className="text-4xl m-auto text-blue-500" />
                     </Card>
-                    <Card
+                    {/* <Card
                         title="Degree Statement"
                         description={
                             "akldfjal alskdjfakljd adslkjfa vzcl twrtwkljm jfsldg"
                         }
                     >
                         <CgTranscript className="text-4xl m-auto text-blue-500" />
-                    </Card>
+                    </Card> */}
                 </div>
             </div>
         </>

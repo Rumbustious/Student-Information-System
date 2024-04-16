@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import officer from "../assets/officer.jpg";
-import "../styles/ex-style.css";
 
 export default function Certifcates() {
     const navigateTo = useNavigate();
@@ -22,6 +21,7 @@ export default function Certifcates() {
     }
 
     const certifacateTypes = [
+        { id: 0, name: "اختر نوع الشهادة", value: "" },
         { id: 1, name: "الى من يهمه الامر", value: "To-Whom-Concern" },
         { id: 2, name: "بيان درجات", value: "Grade-Statement" },
         {
@@ -50,13 +50,12 @@ export default function Certifcates() {
                     <label className="text-lg font-semibold ">
                         Choose Certificate type
                     </label>
-                    <input
+                    <select
                         list="certificates"
                         name="certificate"
                         id="certificate"
                         className="border bg-slate-100 p-1"
-                    />
-                    <datalist id="certificates">
+                    >
                         {certifacateTypes.map((certificate) => (
                             <option
                                 key={certificate.id}
@@ -65,7 +64,7 @@ export default function Certifcates() {
                                 {certificate.name}
                             </option>
                         ))}
-                    </datalist>
+                    </select>
 
                     <label className="text-lg font-semibold">National ID</label>
                     <input

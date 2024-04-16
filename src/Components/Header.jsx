@@ -5,10 +5,10 @@ import Navbar from "./Navbar";
 export default function Header() {
     return (
         <header>
-            <div className="flex justify-between bg-blue-300 p-2">
+            <div className="flex justify-between bg-blue-300 p-2 px-14">
                 <img src={UniversityLogo} alt="University Logo" width={60} />
-                <h1 className="font-black m-auto text-neutral-50 text-2xl">
-                    Faculty of Engineering
+                <h1 className="font-black m-auto text-neutral-50 text-xl">
+                    Faculty of Engineering - Aswan University
                 </h1>
                 <img
                     src={CollegeLogo}
