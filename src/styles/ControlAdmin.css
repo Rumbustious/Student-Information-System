@@ -1,0 +1,60 @@
+.Control-Admin{ 
+    display: flex;
+    margin-top:5px;
+    padding:0px;
+}
+    .Control-image{
+            width:70%;
+            height:100vh;
+            object-fit:cover;
+            display:block;
+    }
+    .Control-image img{
+        width:100%;
+        height:100%;}
+    .Control-container{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            box-sizing:border-box;
+            background-color:#E5AA70;
+    }
+        .Control-container form {
+              width: 90%; 
+              margin: 0 auto; 
+              text-align: center;
+          }
+
+    .Control-container input,select {
+                height:30px;
+                width:250px;
+                margin-bottom:10px;
+                border: 1px solid #ffffff; 
+                border-radius: 5px;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+            .Control-container  h1 {
+                color:black;;
+                /* Dark gray text color */
+            }
+            .Control-container label {
+                display: block;
+                margin-bottom: 5px;
+                color: black;
+                
+            }
+            .Control-container button {
+                width: 160px;
+                background-color: black;
+                color: #ffffff;
+                font-size: 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                border:none;
+                padding:10px 20px;
+                display:center;
+                margin-top:20px;
+               }
+         

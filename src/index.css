@@ -1,0 +1,356 @@
+.page_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page_header img {
+  height: 60px;
+}
+
+.page_header h3 {
+  margin: 0;
+}
+
+.page_header div {
+  text-align: center;
+}
+
+.students {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 20px 0px 20px;
+  padding: 0;
+}
+
+.students th, .students td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.students th {
+  background-color: #f2f2f2;
+} 
+
+@media print {
+  .students {
+    margin: 90px 20px 0px 20px; 
+    page-break-before: auto;
+  }
+
+  .students th, .students td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .students th {
+    background-color: #f2f2f2;
+  }
+}
+@media print {
+  button {
+      display: none; /* Hide the button when printing */
+  }
+}
+.grades{
+  border-collapse: collapse;
+  width: 100%;
+  page-break-before: always;
+  margin: 20px 20px 0px 20px;
+  padding: 0;
+}
+.grades th, .grades td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.grades th {
+  background-color: #f2f2f2;
+}
+h2{
+  text-align: center;
+  margin: 20px 0px 40px 0px; ;
+}
+@media print {
+  .grades {
+    margin: 90px 20px 0px 20px; 
+    page-break-before: auto;
+  }
+
+  .grades th, .students td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .grades th {
+    background-color: #f2f2f2;
+  }
+}
+.container {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+  width: 100%; 
+  background-color: #232f3e;
+}
+
+
+.container  input {
+  height: 30px;
+  width: 250px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff; 
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.container  h1 {
+  color: #ffffff;
+}
+.container label {
+  display: block;
+  /* Make labels appear on a new line */
+  margin-bottom: 5px;
+  color: #adb5bd;
+  /* Dark gray text color */
+}
+.container button {
+  width: 160px;
+  background-color: #28a745;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border:none;
+  padding:10px 20px;
+  
+ }
+ .ControlSheetContainer{margin-top:20px;}
+.ControlSheetTable {
+   direction:rtl;
+   border-collapse: collapse;
+   width: 100%;
+  page-break-before: always;
+  margin-top:15px;
+}
+.ControlSheetTable input {
+  width:2rem;
+  border:none;
+  font-size:1.3rem;
+}
+
+
+.ControlSheetTable th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.ControlSheetTable th {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
