@@ -22,9 +22,7 @@ export default function App() {
                 <Route path="/good-conduct" element={<GoodConduct />} />
                 <Route path="/enrollment" element={<Enrollment />} />
                 <Route path="/dismissal" element={<Dismissal />} />
-                {/* <Route path="/ifadah" element={<Ifadah />} />
                 
-                <Route path="/login" element={<Login />} /> */}
             </Routes>
         </Router>
     );
