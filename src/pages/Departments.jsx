@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
+import Navbar from "../Components/Navbar";
+import { Outlet } from "react-router-dom";
 export default function Departments() {
     return (
-        <div>
-            <h1 className="text-4xl">Departments</h1>
-        </div>
+        <>
+            <Navbar />
+            <Outlet />
+        </>
     );
 }
