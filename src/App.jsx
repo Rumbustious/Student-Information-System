@@ -7,6 +7,11 @@ import Certificates from "./pages/Certificates";
 import GoodConduct from "./pages/GoodConduct";
 import Enrollment from "./pages/Enrollment";
 import Dismissal from "./pages/Dismissal";
+import Departments from "./pages/Departments";
+import Electrical from "./pages/Electrical";
+import Architecture from "./pages/Architecture";
+import Civil from "./pages/Civil";
+
 // import ToWhomConcern from "./pages/ToWhomConcern";
 // import Ifadah from "./pages/Ifadah";
 // import Login from "./pages/Login";
@@ -16,13 +21,17 @@ export default function App() {
         <Router>
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="/Lists" element={<Lists />} />
+                <Route path="/Departments" element={<Departments />}>
+                    <Route index path="electrical" element={<Electrical />} />
+                    <Route path="architecture" element={<Architecture />} />
+                    <Route path="civil" element={<Civil />} />
+                </Route>
+                <Route path="/Lists" element={<Lists />} />
                 <Route path="/Certificates" element={<Certificates />} />
                 <Route path="/statement" element={<Statement />} />
                 <Route path="/good-conduct" element={<GoodConduct />} />
                 <Route path="/enrollment" element={<Enrollment />} />
                 <Route path="/dismissal" element={<Dismissal />} />
-                
             </Routes>
         </Router>
     );
