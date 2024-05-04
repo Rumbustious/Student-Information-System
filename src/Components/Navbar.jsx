@@ -14,7 +14,19 @@ export default function Navbar() {
     return (
         <>
             <nav className="flex p-5 gap-10 justify-center bg-blue-100 px-20">
-                <CgProfile className="text-3xl text-center text-blue-500  cursor-pointer left-0	" />
+                <DropdownMenu>
+                    <DropdownMenuTrigger>
+                        <CgProfile className="text-3xl text-center text-blue-500  cursor-pointer left-0	" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent sideOffset={8}>
+                        <DropdownMenuItem asChild>
+                            <Link to="/signUp">Sign Up</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                            <Link to="/login">Login</Link>
+                        </DropdownMenuItem>
+                    </DropdownMenuContent>
+                </DropdownMenu>
 
                 <div className=" font-bold flex gap-5 w-fit">
                     <Link
@@ -36,7 +48,12 @@ export default function Navbar() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent sideOffset={8}>
                                 <DropdownMenuItem asChild>
-                                    <Link to="departments" className="font-bold">Departments</Link>
+                                    <Link
+                                        to="departments"
+                                        className="font-bold"
+                                    >
+                                        Departments
+                                    </Link>
                                 </DropdownMenuItem>
                                 <DropdownMenuItem asChild>
                                     <Link to="departments/electrical">
